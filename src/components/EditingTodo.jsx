@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function EditingTodo({ todo, toggleIsEditing, editContent }) {
+function EditingTodo({ todo, editContent }) {
   // to manage component's state
   const [content, setContent] = useState(todo.content);
 
@@ -9,7 +9,6 @@ function EditingTodo({ todo, toggleIsEditing, editContent }) {
     if (content.trim().length === 0) return;
 
     // 不然的話就要 update state
-    toggleIsEditing(todo.id);
     editContent(todo.id, content);
   };
 

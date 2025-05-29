@@ -10,11 +10,7 @@ function Todo({
 }) {
   /** props 是一個物件 */
   return todo.isEditing == true ? (
-    <EditingTodo
-      todo={todo}
-      toggleIsEditing={toggleIsEditing}
-      editContent={editContent}
-    />
+    <EditingTodo todo={todo} editContent={editContent} />
   ) : (
     <div className={`todo ${todo.isCompleted ? "completed" : ""}`}>
       <p

@@ -1,7 +1,6 @@
 import "./App.css";
 import { TodoWrapper } from "./components/TodoWrapper";
 function App() {
-  console.log("HJI");
   /**
    * component: A component in React is a reusable building block that divides the user interface (UI)
    *  into independent, manageable parts
